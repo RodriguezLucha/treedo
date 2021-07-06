@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss'
 
-function App() {
+import { data } from './data'
+import { Node } from './Node'
+import { getNodes } from './Utils'
+
+function App () {
+  const nodes = getNodes(null, data)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Treedoo</h1>
+      {nodes.map(node => {
+        return <Node key={node.id} node={node} level={0}></Node>
+      })}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

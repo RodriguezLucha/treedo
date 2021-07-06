@@ -1,0 +1,151 @@
+.treedoorow {
+  display: flex;
+  width: 100vw;
+  margin: 5px;
+}
+
+.RowSpacer {
+}
+
+.RowData {
+  display: flex;
+  width: 100%;
+}
+
+.DataColumn {
+  width: 100%;
+  height: 100%;
+}
+
+.ChildColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+.ParentColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.DeleteToElement {
+  display: flex;
+}
+
+.DataColumn {
+  border: 1px solid #374045;
+  border-radius: 4px;
+}
+
+.ChildColumn {
+  display: flex;
+}
+
+.DataColumn {
+  display: flex;
+}
+
+.LeftSection {
+  width: 100%;
+}
+
+.RightSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.svgButton {
+  width: 1em;
+  height: 1em;
+  margin: 0.1em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.svgButton:hover {
+  transform: scale(1.5);
+  filter: saturate(300%);
+}
+
+.TopSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BottomSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.BottomSectionInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ViewEditTextControl {
+  width: 100%;
+  margin-left: 1em;
+  // font-size: small;
+}
+
+input {
+  // transform: scale(1);
+  color: #d89216;
+  cursor: pointer;
+}
+
+.Strike {
+  text-decoration: line-through;
+}
+
+.Progress {
+  width: 100%;
+}
+.ProgressStats {
+  display: flex;
+  justify-content: flex-end;
+}
+.Stat {
+  padding-right: 1em;
+  font-size: small;
+}
+
+.ProgressBar {
+  display: flex;
+  margin-left: 0;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.squareDone {
+  background-color: #e1d89f;
+  width: 100%;
+  height: 0.75em;
+  margin-left: 1em;
+}
+.squareRemaining {
+  width: 100%;
+  height: 0.75em;
+  background-color: #374045;
+  margin-left: 0.5em;
+}
+
+.lightRed {
+  color: #374045;
+}
+.lightBlue {
+  color: #374045;
+}
+
+.lightGrey {
+  color: #d89216;
+}
+.thin {
+}
